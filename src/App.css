@@ -1,38 +1,179 @@
-.App {
+body {
+  background-color: #e5e5e5;
+}
+
+nav {
+  background-color: #ffffff;
+}
+
+.logo {
+  margin-left: 67px;
+}
+p {
+  margin-top: 33px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* identical to box height, or 24px */
+
   text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* $brandColorPrimary */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: #1b31a8;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+strong {
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.details {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+  margin-top: 87px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: 1px solid #e9eef2;
+  border-radius: 4px;
+  height: 50px;
+  width: 272px;
+
+  margin-top: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+  background: url("./assets/mark.svg") no-repeat scroll 7px 7px;
+  padding-left: 40px;
+  background-color: #ffffff;
+
+  /* $blueGray600 */
+
+  color: #4d6475;
+}
+input:focus {
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  width: 141px;
+  height: 62px;
+
+  /* $brandColorPrimary */
+  border: none;
+  background: #1b31a8;
+  border-radius: 32px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+
+  /* $neutralWhite */
+  margin-left: 100%;
+  color: #ffffff;
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.distance {
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+  height: 155px;
+  margin-left: 8%;
+  margin-top: 49px;
+}
+.calcArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 78px;
+}
+.calcArea span {
+  margin-top: 23px;
+  margin-left: 26px;
+}
+.calcArea strong {
+  margin-top: 23px;
+  margin-right: 25px;
+  width: 152px;
+  height: 38px;
+
+  /* LG / headingMedium */
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  text-align: right;
+
+  /* $brandColorSecondary */
+
+  color: #0079ff;
+}
+
+p.total-distance {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  /* or 14px */
+  margin-left: 26px;
+  /* $blueGray900 */
+  text-align: start;
+  color: #1e2a32;
+}
+/***   map */
+
+.map-container {
+  height: 511px;
+  width: 560px;
+
+  border-radius: 0px;
+  margin-top: 90px;
+  margin-right: 250px;
+  margin-bottom: 102px;
+}
+
+/* little bit responsive  */
+
+@media only screen and (max-width: 1256px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .map-container {
+    margin-left: 8%;
   }
+  button {
+    margin-left: 50%;
+  }
+}
+
+.leaflet-container {
+  width: 400px;
+  height: 500px;
 }
