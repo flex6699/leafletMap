@@ -4,6 +4,7 @@ body {
 
 nav {
   background-color: #ffffff;
+  width: 1200px;
 }
 
 .logo {
@@ -108,6 +109,7 @@ button {
   justify-content: space-between;
   background-color: #ffffff;
   height: 78px;
+  width: 315px;
 }
 .calcArea span {
   margin-top: 23px;
