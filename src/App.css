@@ -4,7 +4,6 @@ body {
 
 nav {
   background-color: #ffffff;
-  width: 1200px;
 }
 
 .logo {
@@ -109,7 +108,7 @@ button {
   justify-content: space-between;
   background-color: #ffffff;
   height: 78px;
-  width: 315px;
+  width: 490px;
 }
 .calcArea span {
   margin-top: 23px;
@@ -172,6 +171,12 @@ p.total-distance {
   }
   button {
     margin-left: 50%;
+  }
+  nav {
+    width: 1200px;
+  }
+  .calcArea {
+    width: 315px;
   }
 }
 
